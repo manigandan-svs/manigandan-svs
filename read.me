@@ -1,0 +1,60 @@
+Hi Team,
+
+As discussed, please find attached the following deliverables:
+
+1. Assignment)_DQ_Framework.docx
+
+This is the original target-state design document shared previously.
+
+It covers:
+
+Metadata-driven architecture
+Generic DQ engine concept
+Configuration and audit model
+Supported rule categories
+Scalability and extensibility approach
+GCP + Databricks target architecture
+2. GCP_Databricks_DQ_POC_Walkthrough.docx
+
+This document explains the POC design and implementation approach.
+
+It includes:
+
+Overall architecture
+GCP and Databricks services used
+Supported source types
+Metadata model
+End-to-end execution flow
+Implemented DQ checks
+Extensibility model
+Scalability considerations
+POC scope and assumptions
+3. GCP_Databricks_DQ_POC_Code.zip
+
+This contains the reference implementation for the POC.
+
+Key capabilities demonstrated:
+
+Metadata-driven execution
+Multiple dataset support
+Multiple source support
+BigQuery
+GCS (CSV / Delta)
+Generic source-reader framework
+Generic rule framework
+Audit logging
+Quarantine support
+Extensible plug-in model for new sources and new rule types
+POC Objective
+
+The objective of the POC is to demonstrate a scalable and extensible metadata-driven Data Quality framework where:
+
+New datasets can be onboarded through configuration.
+Existing DQ rules can be assigned without modifying core engine logic.
+Multiple source systems can be supported through pluggable source readers.
+New rule types can be introduced through reusable plug-in functions while preserving the common execution lifecycle.
+
+This implementation has been aligned to the target architecture shared earlier and uses GCP with Databricks (PySpark) as the primary implementation platform.
+
+Regards,
+ Manigandan
